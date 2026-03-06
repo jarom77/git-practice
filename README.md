@@ -2,15 +2,13 @@
 
 \[Your Step 3 Edit Here\]
 
-This is a very simple repository for practicing with git and GitHub. git is a utility for *version control*. When a body of code is tracked with git, it is easy to see how the software has evolved over time, to roll back changes when needed, and to incorporate modifications by multiple collaborators. In this activity, we're going to focus on core git workflows for single-person projects. We may do a follow-up activity later in the quarter on workflows for collaborative projects. 
-
-GitHub is a free online code hosting service that runs using git. We'll use git and GitHub to collaborate on code and to host the blogs on which you'll submit your homework. 
+This is a very simple repository for practicing with git and GitHub. git is a utility for *version control*. When a body of code is tracked with git, it is easy to see how the software has evolved over time, to roll back changes when needed, and to incorporate modifications by multiple collaborators. GitHub is a free online code hosting service that runs using git.
 
 > ***Note***: There are many ways to use git. GitHub Desktop is one, and is used throughout this guide. VSCode also has an integrated git manager, which is very similar to GitHub Desktop. Git can also be used in the terminal - the commands are shown in a note like this in each section.
 
 ## Preparation
 
-You should already have made an account on [GitHub](https://github.com/) and downloaded some form of git: [GitHub Desktop](https://desktop.github.com/), [Git Bash](https://gitforwindows.org/), command-line git, or [VSCode](https://code.visualstudio.com/download). 
+You should already have made an account on [GitHub](https://github.com/) and downloaded some form of git: [GitHub Desktop](https://desktop.github.com/), [Git Bash](https://gitforwindows.org/) (for Windows), [command-line git](https://git-scm.com/install), or [VSCode](https://code.visualstudio.com/download). 
 
 ## 1. Fork
 
@@ -18,7 +16,7 @@ You should already have made an account on [GitHub](https://github.com/) and dow
 
 Go ahead and fork this repo, using the "Fork" button at in the top-right corner. 
 
-Check out your fork! At the moment, it's just a copy of the [original repository](https://github.com/jarom77/git-practice). 
+Check out your fork! At the moment, it's just a copy of the [original repository](https://github.com/jarom77/git-practice) (which is itself a fork of another repo!). 
 
 ## 2. Clone
 
@@ -30,7 +28,9 @@ You now have a copy of this repository on GitHub. But how can you make changes? 
 
 In your local clone of the repository, open this file (`README.md`). At the top of the file, underneath the title, type 
 
-> I'm \[your name\] and I edited this file! 
+```
+I'm [your name] and I edited this file!
+```
 
 ## 4. Add and Commit
 
@@ -97,11 +97,13 @@ Let's incorporate the merge we just did into our local repository. In GitHub Des
 
 Finally, check that your new folder is in your repo again. Your merge online is now reflected in your own files - "main" has all the changes.
 
-### 10. No Duplicate Files! 
+## 10. Notes
 
 An important principle of version control is that you **never** duplicate files. Rather than having `first_draft.ipynb`, `final_version.ipynb`, `final_version_REAL.ipynb`, you should instead commit your code at each stage (or even more frequently). You'll always be able to go back and find the earlier versions in the commit history.
 
 Another topic that you might find useful to explore on your own is the `.gitignore` file. This file specifies files which should be *excluded* from tracking by git. This is handy if there are certain "junk" files that you would prefer not to see in GitHub. 
+
+Finally, if you're using the command line, you can do some reading on how to set up SSH keys so you don't need to type in your username and password each time.
 
 ## 11. (Optional) Discard and Revert
 
