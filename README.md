@@ -10,11 +10,11 @@ GitHub is a free online code hosting service that runs using git. We'll use git 
 
 ## Preparation
 
-You should already have made an account on [GitHub](https://github.com/) and downloaded some form of git. 
+You should already have made an account on [GitHub](https://github.com/) and downloaded some form of git: [GitHub Desktop](https://desktop.github.com/), [Git Bash](https://gitforwindows.org/), command-line git, or [VSCode](https://code.visualstudio.com/download). 
 
 ## 1. Fork
 
-*Forking* refers to the act of creating your personal copy of an existing body of code. Typically you only do this for repositories that you don't have edit access to, such as this one. You can then modify your *fork* as you wish. Forking is a great way to make use of templates and other resources upon which you can build. For example, you'll soon fork a template for your website, which you'll then populate and customize. 
+*Forking* refers to the act of creating your personal copy of an existing body of code. Typically you only do this for repositories that you don't have edit access to, such as this one. You can then modify your *fork* as you wish.
 
 Go ahead and fork this repo, using the "Fork" button at in the top-right corner. 
 
@@ -22,7 +22,9 @@ Check out your fork! At the moment, it's just a copy of the [original repository
 
 ## 2. Clone
 
-You now have a copy of this repository on GitHub. But how can you make changes? It's possible to manually edit files on GitHub, but this is not at all convenient. Instead, you should create a *local clone* of the repository. To do this, hit the big green button and copy the "https" link. Then open your terminal where you'll run git commands. Run `git clone <link>`, pasting in what you copied in place of "<link>".
+You now have a copy of this repository on GitHub. But how can you make changes? It's possible to manually edit files on GitHub, but this is not at all convenient. Instead, you should create a *local clone* of the repository. To do this, hit the big green button and choose Open in GitHub Desktop. Choose to create the repo in a location where you'll easily remember it. 
+
+> Using the URL of the page, you can run `git clone <url>`, substituting the URL in.
 
 ## 3. Edit a File
 
@@ -32,9 +34,13 @@ In your local clone of the repository, open this file (`README.md`). At the top 
 
 ## 4. Add and Commit
 
-Now run `git status` in the folder. Observe that the file `README.md` is now listed as changed. You'll need to add and commit the change to your repo. Add by running `git add .` to add changes to all files in the repo.
+Now go over to GitHub Desktop. Observe that the file `README.md` is now listed as changed. If there isn't already a blue checkmark beside the file, click the box to make one. 
 
-Then, run `git commit -m "<message">` adding a descriptive *commit message*. The commit message should be a short description of what you achieved with your code modification. For example, a good commit message here might be "Add name to README.md." 
+> `git status` shows changes. `git add .` adds changes to all files in your repo. `git add <filename>` adds changes just for that file.
+
+Then, add a *commit message* in the box below. The commit message should be a short description of what you achieved with your code modification. For example, a good commit message here might be "Add name to README.md." Once you've entered the commit message, click the big blue Commit button. 
+
+> In command line, run `git commit -m "<message>"`
 
 ## 5. Branching
 
@@ -44,7 +50,7 @@ Run `git branch <branch_name>`, putting in an appropriate name for your branch. 
 
 You can see that you have two branches now using `git branch`. However, you're still on "main". To switch to your branch, run `git checkout <branch_name>`.
 
-Let's write some code! Make a new folder called `practice-folder` within the cloned repository. Then, create a Python file or Jupyter Notebook in this folder. Add the following code, obtaining a simple plot of a sine wave. 
+Let's write some code! Make a new folder called `practice-folder` within the cloned repository. Then, create a Jupyter Notebook (or normal Python file) in this folder. Add the following code, obtaining a simple plot of a sine wave. 
 
 ```python
 from matplotlib import pyplot as plt
@@ -59,7 +65,9 @@ Make sure to save the resulting file.
 
 ## 6. Add and Commit
 
-Now, add your file (`git add <filename>`). Add an informative commit message, and commit the file (`git commit -m "message"`). 
+Now, add (click the checkbox) beside your new notebook. Add an informative commit message, and commit the file. 
+
+> You can add and commit as before, or you can do both in one command: `git commit -am "<message>"`. The -a means to add all files first.
 
 ## 7. Push
 
