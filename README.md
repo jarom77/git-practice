@@ -2,8 +2,6 @@
 
 <img height="150" alt="git icon" src="https://github.com/user-attachments/assets/5df2e1d4-b754-450d-84f4-2d905f2401f6" />
 
-\[Your Step 3 Edit Here\]
-
 This is a very simple repository for practicing with git and GitHub. git is a utility for *version control*. When a body of code is tracked with git, it is easy to see how the software has evolved over time, to roll back changes when needed, and to incorporate modifications by multiple collaborators. GitHub is a free online code hosting service that runs using git.
 
 > ***Note***: There are many ways to use git. GitHub Desktop is one, and is used throughout this guide. VSCode also has an integrated git manager, which is very similar to GitHub Desktop. Git can also be used in the terminal - the commands are shown in a note like this in each section.
@@ -105,7 +103,8 @@ Let's incorporate the merge we just did into our local repository. In GitHub Des
 
 Finally, check that your new folder is in your repo again. Your merge online is now reflected in your own files - "main" has all the changes.
 
-## 10. Notes
+<details>
+<summary><h2>Further Reading</h2></summary>
 
 An important principle of version control is that you **never** duplicate files. Rather than having `first_draft.ipynb`, `final_version.ipynb`, `final_version_REAL.ipynb`, you should instead commit your code at each stage (or even more frequently). You'll always be able to go back and find the earlier versions in the commit history.
 
@@ -113,11 +112,11 @@ Another topic that you might find useful to explore on your own is the `.gitigno
 
 Finally, if you're using the command line, you can do some reading on how to set up SSH keys so you don't need to type in your username and password each time.
 
-## 11. (Optional) Discard and Revert
+## Discard and Revert
 
 One huge advantage of working with a version control system like git is that you can easily undo mistakes by going back to the last "good" version of your project. There are multiple ways of doing this. We'll focus on two. 
 
-### 11.1 If You Haven't Committed Yet: Discard
+### If You Haven't Committed Yet: Discard
 
 So, you were making a small tweak to your file and accidentally broke the amazing function that you were working on. It happens! If you catch this before you commit your changes, then fixing it is easy -- all you need to do is *discard* your changes. 
 
@@ -125,7 +124,7 @@ In that Jupyter notebook you created in Step 5, delete the line `import numpy as
 
 Over in GitHub Desktop, notice that there is a change recorded to that file. Right-click on the change and choose "Discard Changes." Check your notebook again. You should observe that the line `import numpy as np` is back where it belongs. Great!
 
-### 11.2 If You Committed Your Mistake: Revert
+### If You Committed Your Mistake: Revert
 
 Sometimes, we don't catch a mistake until after we've already committed it. If we're unlucky, we may even have created other commits since our mistake. In these cases, the first step is to identify on which commit the error was introduced. This requires careful debugging and attention to detail. One approach is to *go back* to a previous commit on which you know your code was working, and then step through the changes you made. To do this, we use the *revert* command. 
 
@@ -134,3 +133,4 @@ Go back to your Jupyter Notebook, and delete `import numpy as np` again. This ti
 To *revert* the commit, navigate over to the History tab of GitHub Desktop. Right-click the commit with the message "remove numpy import," and choose "Revert Changes in Commit." This will have the effect of creating a *new* commit that undoes the changes in your erroneous commit. This will work even if you've made other commits since the bad one; only the changes from the bad commit will be reverted. 
 
 ***Note***: GitHub Desktop doesn't gave an option corresponding to `git reset`, but if you are comfortable in the terminal and familiar with this command, you can also use `git reset` to accomplish a similar task, albeit with different consequences for your commit history.
+</details>
