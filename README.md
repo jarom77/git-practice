@@ -1,5 +1,7 @@
 # Practice with git and GitHub
 
+<img height="150" alt="git icon" src="https://github.com/user-attachments/assets/5df2e1d4-b754-450d-84f4-2d905f2401f6" />
+
 \[Your Step 3 Edit Here\]
 
 This is a very simple repository for practicing with git and GitHub. git is a utility for *version control*. When a body of code is tracked with git, it is easy to see how the software has evolved over time, to roll back changes when needed, and to incorporate modifications by multiple collaborators. GitHub is a free online code hosting service that runs using git.
@@ -12,11 +14,13 @@ You should already have made an account on [GitHub](https://github.com/) and dow
 
 ## 1. Fork
 
+<img height="150" alt="fork icon" src="https://github.com/user-attachments/assets/4df25223-68f0-4b6e-a82d-6362f1fc7df2" />
+
 *Forking* refers to the act of creating your personal copy of an existing body of code. Typically you only do this for repositories that you don't have edit access to, such as this one. You can then modify your *fork* as you wish.
 
 Go ahead and fork this repo, using the "Fork" button at in the top-right corner. 
 
-Check out your fork! At the moment, it's just a copy of the [original repository](https://github.com/jarom77/git-practice) (which is itself a fork of another repo!). 
+Check out your fork! At the moment, it's just a copy of the [original repository](https://github.com/jarom77/git-practice) (which is a fork of another repo!). 
 
 ## 2. Clone
 
@@ -42,7 +46,9 @@ Then, add a *commit message* in the box below. The commit message should be a sh
 
 > In command line, run `git commit -m "<message>"`
 
-## 5. Branching
+## 5. Branches
+
+<img height="150" alt="image" src="https://github.com/user-attachments/assets/93626707-9d94-4e9f-8aee-123f91602ee6" />
 
 Typically we don't commit directly to main as we just did. All work occurs on a branch that is specific to what you're currently working on. Let's make a new branch and do some development on it.
 
@@ -80,6 +86,8 @@ To push your code, just click the black "Push" button at the top right of GitHub
 > Using the command line requires you to authenticate when interacting with the remote (github.com), as you do that during setup in Github Desktop. Just type in your username and password.
 
 ## 8. GitHub Pull Requests
+
+<img height="150" alt="image" src="https://github.com/user-attachments/assets/dbbe7787-c63b-4dfa-9b4e-f155439cceaf" />
 
 Now go to the URL of your fork on GitHub and inspect the new `README.md` file. You'll notice that your new folder isn't there! Click on the dropdown near the top and select your branch. Now your folder is there! You can also take a look at the Jupyter Notebook you created. Note a nifty feature: by default, GitHub renders the Jupyter Notebook, so that you can see the plot you created. Your code is also shown in an attractive and readable format.
 
