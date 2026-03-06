@@ -76,6 +76,8 @@ Great, we've made some local changes! Our primary remaining task is to *push* ou
 To push your code, just click the black "Push" button at the top right of GitHub Desktop. Before you click, you can notice that the button indicates the number of commits that you have made since your last push. After you click the button, you will have no more commits to push.
 
 > `git push` pushes the current branch, `git push --all` pushes all branch changes. The first time you push a new branch, you will need to run `git push --set-upstream origin <branch_name>` so git knows to create the branch on Github.
+>
+> Using the command line requires you to authenticate when interacting with the remote (github.com), as you do that during setup in Github Desktop. Just type in your username and password.
 
 ## 8. GitHub Pull Requests
 
